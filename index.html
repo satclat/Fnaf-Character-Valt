@@ -1,1 +1,75 @@
-<!-- FNAF 1 Page Placeholder -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FNAF Character Vault</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #111;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #222;
+      padding: 1rem;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .character-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .character-card {
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .character-card:hover {
+      transform: scale(1.05);
+    }
+    .character-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .character-name {
+      font-size: 1.2rem;
+      padding: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FNAF Character Vault</h1>
+    <p>Explore animatronics across all FNAF games</p>
+  </header>
+  <main class="character-grid">
+    <div class="character-card">
+      <img src="https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/1/15/FreddyRender.png" alt="Freddy Fazbear" />
+      <div class="character-name">Freddy Fazbear</div>
+    </div>
+    <div class="character-card">
+      <img src="https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/f/f5/BonnieRender.png" alt="Bonnie the Bunny" />
+      <div class="character-name">Bonnie the Bunny</div>
+    </div>
+    <div class="character-card">
+      <img src="https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/4/4b/ChicaRender.png" alt="Chica the Chicken" />
+      <div class="character-name">Chica the Chicken</div>
+    </div>
+    <div class="character-card">
+      <img src="https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/f/f4/FoxyRender.png" alt="Foxy the Pirate" />
+      <div class="character-name">Foxy the Pirate</div>
+    </div>
+  </main>
+</body>
+</html>
